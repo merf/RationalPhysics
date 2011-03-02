@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <VisualStudioProject
 	ProjectType="Visual C++"
 	Version="9.00"
@@ -41,7 +41,7 @@
 			<Tool
 				Name="VCCLCompilerTool"
 				Optimization="0"
-				AdditionalIncludeDirectories="..\include;..\..\..\..\..\cinder_0.8.2_mac\include;..\..\..\..\..\cinder_0.8.2_mac\boost"
+				AdditionalIncludeDirectories="..\include;..\..\..\\include;..\..\..\\boost;..\..\..\blocks\kiss\include"
 				PreprocessorDefinitions="WIN32;_DEBUG;_WINDOWS;NOMINMAX"
 				MinimalRebuild="true"
 				BasicRuntimeChecks="3"
@@ -64,7 +64,7 @@
 				Name="VCLinkerTool"
 				AdditionalDependencies="cinder_d.lib"
 				LinkIncremental="2"
-				AdditionalLibraryDirectories="..\..\..\..\..\cinder_0.8.2_mac\lib;..\..\..\..\..\cinder_0.8.2_mac\lib\msw"
+				AdditionalLibraryDirectories="..\..\..\\lib;..\..\..\\lib\msw"
 				GenerateDebugInformation="true"
 				SubSystem="2"
 				RandomizedBaseAddress="1"
@@ -183,6 +183,46 @@
 				RelativePath="..\src\RPhysicsApp.cpp"
 				>
 			</File>
+			<File
+				RelativePath="..\src\RPhysicsApp.h"
+				>
+			</File>
+			<Filter
+				Name="Physics"
+				>
+				<File
+					RelativePath="..\src\ForceGenerator.cpp"
+					>
+				</File>
+				<File
+					RelativePath="..\src\ForceGenerator.h"
+					>
+				</File>
+				<File
+					RelativePath="..\src\Integrator.cpp"
+					>
+				</File>
+				<File
+					RelativePath="..\src\Integrator.h"
+					>
+				</File>
+				<File
+					RelativePath="..\src\SimObject.cpp"
+					>
+				</File>
+				<File
+					RelativePath="..\src\SimObject.h"
+					>
+				</File>
+				<File
+					RelativePath="..\src\Simulation.cpp"
+					>
+				</File>
+				<File
+					RelativePath="..\src\Simulation.h"
+					>
+				</File>
+			</Filter>
 		</Filter>
 		<Filter
 			Name="Header Files"
@@ -202,7 +242,7 @@
 			<File
 				RelativePath=".\Resources.rc"
 				>
-			</File>			
+			</File>
 		</Filter>
 	</Files>
 	<Globals>
